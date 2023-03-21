@@ -17,5 +17,9 @@ namespace BigSchool.Models
         [Key]
         [Column(Order = 2)]
         public string AttendeeId { get; set; }
+        public string LecturerId { get; internal set; }
+        public DateTime DateTime { get; internal set; }
+        public object Lecturer { get; internal set; }
+        public object Category { get; internal set; }
     }
 }
