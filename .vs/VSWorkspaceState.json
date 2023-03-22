@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BigSchool",
+    "\\BigSchool\\Controllers",
+    "\\BigSchool\\Views",
+    "\\BigSchool\\Views\\Courses",
+    "\\BigSchool\\Views\\Home"
+  ],
+  "SelectedNode": "\\BigSchool\\Views\\Courses\\Attending.cshtml",
+  "PreviewInSolutionExplorer": false
+}
