@@ -36,49 +36,36 @@
         }
 
     </ul>
-    @section scripts
+</div>
+@section scripts
     {
-        <script>
-        $(document).ready(function)(){
-            $(".js-toggle-attendace").click(function (e) {
+    <script>
+        $(document).ready(function () {
+            $('.js-toggle-attendance').click(function (e) {
                 var button = $(e.target);
-                $.post("/api/attendances", { courseId: button.attr("data-course-id") })
-                    .done(function () {
-                        button
-                            .removeClass("btn-default")
-                            .addClass("btn-info")
-                            .text("Going");
-                    })
+                $.post("/api/attendances", { CourseId: button.attr("data-course-id") }).done(function () {
+                    button
+                        .removeClass("btn-default")
+                        .addClass("btn-info")
+                        .text("Going");
+                })
                     .fail(function () {
-                        alert("Something failed!");
+                        alert("Something failed");
                     });
             });
 
-            $(".js-toggle-follow").click(function (e) {
+            $('.js-toggle-follow').click(function (e) {
                 var button = $(e.target);
-                $.post("/api/followings", { courseId: button.attr("data-user-id") })
-                    .done(function () {
-                        button
-
-                            .text("Following");
-                    })
-                    .fail(function () {
-                        alert("Something failed!");
-                    });
+                $.post("/api/followings", { FolloweeId: button.attr("data-user-id") }).done(function () {
+                    button
+                        .text("Following");
+                }).fail(function () {
+                    alert("Something failed");
+                });
             });
-
-
-
-
-
-
-
 
         });
+    </script>
 
 
-
-
-        </script>
     }
-</div>

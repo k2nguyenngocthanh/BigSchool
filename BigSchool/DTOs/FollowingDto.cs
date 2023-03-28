@@ -7,8 +7,8 @@ namespace BigSchool.DTOs
 {
     public class FollowingDto
     {
-        internal string FolloweeId;
+    
 
-        public string FollowingId { get; set; }
+        public string FolloweeId { get; set; }
     }
 }

@@ -116,6 +116,12 @@ namespace BigSchool.Controllers
             _dbContext.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
+        [Authorize]
+        public ActionResult Cancel()
+
+        {
+            return RedirectToAction("Index", "Home");
+        }
 
     }
 }
