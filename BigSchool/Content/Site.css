@@ -61,3 +61,7 @@ textarea {
     .course > li:hover .action {
         display: block;
     }
+
+    .course > button .js-toggle-follow {
+        color: darkred;
+    }
